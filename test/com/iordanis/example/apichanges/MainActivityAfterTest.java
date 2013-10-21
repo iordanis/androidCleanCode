@@ -13,7 +13,7 @@ import com.iordanis.example.apichanges.PreferencesSaver;
 import com.xtremelabs.robolectric.RobolectricTestRunner;
 
 @RunWith(RobolectricTestRunner.class)
-public class MainActivity6cTest {
+public class MainActivityAfterTest {
 
 	@Rule public JUnitRuleMockery mockery = new JUnitRuleMockery();
 	@Mock Editor editor;

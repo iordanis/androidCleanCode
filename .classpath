@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="deps/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="deps/gwen-0.0.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="deps/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="deps/javassist-3.14.0-GA.jar"/>
+	<classpathentry kind="lib" path="deps/jmock-2.6.0-RC2.jar"/>
+	<classpathentry kind="lib" path="deps/jmock-junit4-2.6.0-RC2.jar"/>
+	<classpathentry kind="lib" path="deps/jmock-legacy-2.6.0-RC2.jar"/>
+	<classpathentry kind="lib" path="deps/junit-dep-4.8.2.jar"/>
+	<classpathentry kind="lib" path="deps/objenesis-1.0.jar"/>
+	<classpathentry kind="lib" path="deps/robolectric-1.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="deps/robotium-solo-4.3.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -13,8 +13,19 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-    <FrameLayout android:id="@+id/google_plus"/>
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:id="@+id/google_plus"/>
     
-    <FrameLayout android:id="@+id/small_button"/>
-    <FrameLayout android:id="@+id/big_button"/>
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/small_button"/>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:id="@+id/big_button"/>
+    
 </RelativeLayout>

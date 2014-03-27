@@ -1,6 +1,6 @@
 package com.iordanis.example.module;
 
-import static com.iordanis.example.MyCoolApplication.getApplication;
+import static com.iordanis.example.DependencyInjectedApplication.getApplication;
 import android.content.pm.PackageManager;
 
 import com.iordanis.example.capabilities.GooglePlayAvailability;

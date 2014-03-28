@@ -14,7 +14,7 @@
         android:text="@string/hello_world" />
 
     <FrameLayout android:id="@+id/google_plus"/>
-    
     <FrameLayout android:id="@+id/small_button"/>
     <FrameLayout android:id="@+id/big_button"/>
+    
 </RelativeLayout>

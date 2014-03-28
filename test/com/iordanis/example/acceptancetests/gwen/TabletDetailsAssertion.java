@@ -1,4 +1,4 @@
-package com.iordanis.example.gwen;
+package com.iordanis.example.acceptancetests.gwen;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;

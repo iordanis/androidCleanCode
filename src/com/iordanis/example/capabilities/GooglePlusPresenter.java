@@ -1,15 +1,12 @@
 package com.iordanis.example.capabilities;
 
 public class GooglePlusPresenter {
+	private final GooglePlusView googlePlusView;
 	private final GooglePlayAvailability googlePlayAvailability;
-	private GooglePlusView googlePlusView;
 
-	public GooglePlusPresenter(GooglePlayAvailability googlePlayAvailability) {
-		this.googlePlayAvailability = googlePlayAvailability;
-	}
-
-	public void setView(GooglePlusView googlePlusView) {
+	public GooglePlusPresenter(GooglePlusView googlePlusView, GooglePlayAvailability googlePlayAvailability) {
 		this.googlePlusView = googlePlusView;
+		this.googlePlayAvailability = googlePlayAvailability;
 	}
 
 	public void present() {
@@ -18,6 +15,10 @@ public class GooglePlusPresenter {
 		} else {
 			googlePlusView.hideGooglePlus();
 		}
+	}
+
+	public void stopPresenting() {
+		// Do any view cleanup, release potentially open resources on the view.
 	}
 
 }

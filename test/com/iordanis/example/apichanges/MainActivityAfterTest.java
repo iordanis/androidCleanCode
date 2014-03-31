@@ -14,7 +14,7 @@ import com.xtremelabs.robolectric.RobolectricTestRunner;
 public class MainActivityAfterTest {
 
 	@Rule public JUnitRuleMockery mockery = new JUnitRuleMockery();
-	@Mock Editor editor;
+	@Mock private Editor editor;
 
 	@Test
 	public void canSaveLaunchFlag() {

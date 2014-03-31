@@ -2,10 +2,10 @@ package com.iordanis.example.resources;
 
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
 import static android.content.pm.PackageManager.DONT_KILL_APP;
-
-import com.iordanis.example.R;
 import android.app.Application;
 import android.content.ComponentName;
+
+import com.iordanis.example.R;
 
 public class ConfiguredComponentApplication extends Application {
 

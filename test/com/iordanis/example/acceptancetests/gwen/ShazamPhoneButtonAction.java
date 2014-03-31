@@ -10,7 +10,7 @@ public class ShazamPhoneButtonAction implements Action<Solo, Void> {
 
 	@Override
 	public Void actOn(Solo solo) {
-        final View shazamButton = solo.getView(R.id.big_button);
+        View shazamButton = solo.getView(R.id.big_button);
 		solo.clickOnView(shazamButton);
 		return null;
 	}

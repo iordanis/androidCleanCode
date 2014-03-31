@@ -16,8 +16,7 @@ public class TabletDetailsAssertion implements Assertion<Solo> {
 	public void assertWith(Solo solo) {
 		waitForAnimationToFinish();
 		assertThat(solo.getCurrentViews(ViewPager.class), not(empty()));
-		assertThat(solo.waitForCondition(titleAndArtistShowOnSidePanel()
-				, 5000), is(true));
+		assertThat(solo.waitForCondition(titleAndArtistShowOnSidePanel(), 5000), is(true));
 	}
 
 

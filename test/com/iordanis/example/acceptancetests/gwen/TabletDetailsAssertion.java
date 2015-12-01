@@ -1,4 +1,4 @@
-package com.iordanis.example.gwen;
+package com.iordanis.example.acceptancetests.gwen;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
@@ -16,8 +16,7 @@ public class TabletDetailsAssertion implements Assertion<Solo> {
 	public void assertWith(Solo solo) {
 		waitForAnimationToFinish();
 		assertThat(solo.getCurrentViews(ViewPager.class), not(empty()));
-		assertThat(solo.waitForCondition(titleAndArtistShowOnSidePanel()
-				, 5000), is(true));
+		assertThat(solo.waitForCondition(titleAndArtistShowOnSidePanel(), 5000), is(true));
 	}
 
 

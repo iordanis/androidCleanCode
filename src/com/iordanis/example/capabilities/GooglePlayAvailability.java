@@ -1,21 +1,11 @@
 package com.iordanis.example.capabilities;
 
-import android.content.pm.PackageManager;
 
-public class GooglePlayAvailability {
-	private final PackageManager packageManager;
+/**
+ * Model for existence of google play services on this device.
+ */
+public interface GooglePlayAvailability {
 
-	public GooglePlayAvailability(PackageManager packageManager) {
-		this.packageManager = packageManager;
-	}
-
-	public boolean googlePlayIsAvailable() {
-		try {
-			packageManager.getApplicationInfo("com.android.vending", 0);
-			return true;
-		} catch (PackageManager.NameNotFoundException e) {
-			return false;
-		}
-	}
+	boolean googlePlayIsAvailable();
 
 }

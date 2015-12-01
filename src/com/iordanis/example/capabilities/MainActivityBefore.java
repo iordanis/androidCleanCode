@@ -9,13 +9,18 @@ import android.view.View;
 
 import com.iordanis.example.R;
 
-public class MainActivity extends Activity {
+public class MainActivityBefore extends Activity {
+	private View googlePlus;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		View googlePlus = findViewById(R.id.google_plus);
+		googlePlus = findViewById(R.id.google_plus);
+	}
 
+	@Override
+	protected void onResume() {
 		try {
 			getPackageManager().getApplicationInfo("com.android.vending", 0);
 			googlePlus.setVisibility(VISIBLE);

@@ -12,24 +12,24 @@ import android.support.v4.view.ViewPager;
 import android.test.ActivityInstrumentationTestCase2;
 import android.view.View;
 
-public class ShazamTest extends ActivityInstrumentationTestCase2<ActivityUnderTest> {
+public class ShazamingOldTest extends ActivityInstrumentationTestCase2<ActivityUnderTest> {
 	private static final int TIMEOUT = 5000;
 	private Solo solo;
 
-	public ShazamTest(Class<ActivityUnderTest> activityClass) {
+	public ShazamingOldTest(Class<ActivityUnderTest> activityClass) {
 		super(activityClass);
 	}
 
 	@Override
 	protected void setUp() {
 		solo = new Solo(getInstrumentation());
-		// Configure a fake server to return a track...
+		// Arrange a fake server to return a track..
 
 	}
 
 	public void testShazamingOnPhone() {
 		// Action
-        final View shazamButton = solo.getView(R.id.big_button);
+        View shazamButton = solo.getView(R.id.big_button);
 		solo.clickOnView(shazamButton);
 
 		// Assertions
@@ -44,7 +44,7 @@ public class ShazamTest extends ActivityInstrumentationTestCase2<ActivityUnderTe
 
 	public void testShazamingOnTablet() {
 		// Action
-		final View shazamButton = solo.getView(R.id.small_button);
+		View shazamButton = solo.getView(R.id.small_button);
 		solo.clickOnView(shazamButton);
 
 		waitForAnimationToFinish();
@@ -63,11 +63,11 @@ public class ShazamTest extends ActivityInstrumentationTestCase2<ActivityUnderTe
 		throw new UnsupportedOperationException();
 	}
 
-	private void waitForAnimationToFinish() {
-		throw new UnsupportedOperationException();
-	}
 	private Condition titleShowsOnFullScreen() {
 		throw new UnsupportedOperationException();
+	}
+
+	private void waitForAnimationToFinish() {
 	}
 
 }

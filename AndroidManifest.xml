@@ -6,16 +6,15 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <application
-        android:name=".MyCoolApplication"
-        android:allowBackup="true"
+        android:name=".DependencyInjectedApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.iordanis.example.apichanges.MainActivity"
+            android:name="com.iordanis.example.apichanges.MainActivityBefore"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <uses-library android:name="android.test.runner" />
+
+        <activity android:name="com.iordanis.example.resources.PhoneActivity" >
+            <!-- Handles intents for showing a track result -->
+        </activity>
+
+        <activity android:name="com.iordanis.example.resources.TabletActivity" >
+            <!-- Handles intents for showing a track result -->
+        </activity>
+
     </application>
     
     <instrumentation 

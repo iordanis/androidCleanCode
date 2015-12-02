@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
 
+        <uses-library android:name="android.test.runner" />
+
         <activity android:name="com.iordanis.example.resources.PhoneActivity" >
             <!-- Handles intents for showing a track result -->
         </activity>
@@ -30,6 +32,12 @@
         <activity android:name="com.iordanis.example.resources.TabletActivity" >
             <!-- Handles intents for showing a track result -->
         </activity>
+
     </application>
+    
+    <instrumentation 
+        android:name="android.test.InstrumentationTestRunner"
+    	android:targetPackage="com.iordanis.example.acceptancetests"
+    	android:label="My Tests" />
 
 </manifest>
